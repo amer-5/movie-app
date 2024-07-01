@@ -1,0 +1,79 @@
+body {
+  width: 100vw;
+}
+
+.wrapper {
+  margin: 160px 12vw;
+  width: 76vw;
+}
+
+.wrapper h1 {
+  font-size: 64px;
+  font-weight: semibold;
+}
+
+.wrapper p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #767e94;
+}
+
+.suggest {
+  width: 50%;
+  background-color: rgba(18, 24, 41, 0.8);
+  border-radius: 24px;
+  border: 2px solid #20283e;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 25%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggest h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.suggest input {
+  margin-top: 24px;
+  width: calc(80% - 32px);
+  margin: 16px;
+  padding: 20px;
+  color: rgb(71, 80, 105);
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid #20283e;
+  border-radius: 12px;
+}
+
+.suggest input::placeholder {
+  color: rgb(71, 80, 105);
+}
+
+.suggest input:focus {
+  outline: 2px solid #5b4af4;
+}
+
+.suggest button {
+  width: 100%;
+  width: calc(80% - 32px);
+  margin: 16px;
+  margin-bottom: 48px;
+  padding: 20px;
+  border: none;
+  background-color: #7c6ef6;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .suggest {
+    width: 100%;
+   }
+}

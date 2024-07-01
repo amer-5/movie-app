@@ -1,0 +1,116 @@
+input {
+  color: black;
+}
+
+.movies {
+  margin: 160px 12vw 0 12vw;
+}
+
+.homeText h1 {
+  font-size: 64px;
+  font-weight: semibold;
+}
+
+.homeText p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #767e94;
+}
+
+.movies input {
+  margin-top: 24px;
+  width: 50%;
+  padding: 20px;
+  color: rgb(71, 80, 105);
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid #20283e;
+  border-radius: 12px;
+}
+
+.movies input::placeholder {
+  color: rgb(71, 80, 105);
+}
+
+.movies input:focus {
+  outline: 2px solid #5b4af4;
+}
+
+.filters {
+  margin: 64px 0;
+  border-radius: 12px;
+  width: 40%;
+  padding: 8px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.filters div {
+  padding: 8px 24px;
+  width: 33.3%;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #a8aebf;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.activeFilter {
+  background-color: #7c6ef6;
+  color: #fff !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px 16px;
+  margin-bottom: 60px;
+}
+
+.card {
+  width: calc(25% - 32px);
+  background-color: #12182998;
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .filters {
+    width: 50%;
+  }
+} 
+
+@media only screen and (max-width: 1280px) {
+  .filters {
+    width: 60%;
+  }
+  .card {
+    width: calc(33.3% - 32px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .filters {
+    width: 100%;
+  }
+  .card {
+    width: calc(50% - 32px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: calc(100%);
+  }
+}

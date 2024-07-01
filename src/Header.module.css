@@ -1,0 +1,37 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: #121829cc;
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12vw;
+  position: fixed;
+  top: 0;
+}
+
+.header img {
+  height: 40px;
+  width: 40px;
+  opacity: 1;
+}
+
+.header ul li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  font-weight: 700;
+  letter-spacing: .02rem;
+}
+
+.header ul li a {
+  color: #A8AEBF !important;
+  font-size: 1.1rem;
+  transition: .3s;
+}
+
+.header ul li a:hover {
+  color: #7B6EF6 !important;
+}
